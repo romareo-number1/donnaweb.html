@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;
+background-image: url("https://images.hdqwalls.com/wallpapers/abstract-tiles-4k-v9.jpg");
+  }
+form {border: 3px solid #f1f1f1;}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+padding: 3px;
+  text-align: right;
+}
+li a {
+  display: block;
+color: black;
+text-align: right;
+padding: 14px 16px;
+text-decoration: none;
+margin-top: 19px;
+margin-right: 16px;
+font-size: 17px;
+}
+
+li a{
+  float:right;
+}
+
+li a:hover{
+color:white;
+}
+
+li .house{
+  float: left;
+  color:black;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 1000px;
+}
+
+
+
+#scroll{
+  background-color: darkorchid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+}
+
+h2{
+  margin-left: 20px;
+}
+button {
+  background-color:darkorchid;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius:7px;
+}
+.googlebutton{
+  background-color:white;
+  color: black;
+  border:1px solid black;
+  width: 160px;
+  height: 65px;
+  margin-right:80px;
+  margin-left:70px;
+  padding:0px 60px ;
+  font-size: 13px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius:50px;
+  text-align: center;
+}
+
+.facebookbutton{
+  background-color:white;
+  color: black;
+  border:1px solid black;
+  width: 160px;
+  height: 65px;
+  margin-right:100px;
+  padding:0px 60px ;
+  font-size: 13px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius:50px;
+  text-align: center;
+  float: right;
+
+}
+
+.emailbutton{
+  background-color:white;
+  color: black;
+  border:1px solid black;
+  width: 160px;
+  height: 65px;
+  margin-left: 38%;
+  padding:0px 60px ;
+  font-size: 13px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius:50px;
+  text-align: center;
+  float: center;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  padding: 30px;
+
+}
+.box{
+  border: 2px solid darkgray;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  margin-right: 300px;
+  margin-left: 300px;
+  border-radius:12px;
+  background-color: black;
+}
+p {
+  text-align: right;
+color:white;
+}
+
+input{
+  border-radius:12px;
+  color:white;
+}
+
+  img{
+  background-color: white;
+    border-radius:12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    bottom:20px;
+    top:10px;
+
+
+
+
+
+
+}
+
+.ortext{
+  text-align: center;
+  opacity:0.5;
+}
+
+
+.googletext{
+  text-align: center;
+}
+
+.facebooktext{
+text-align: center;
+}
+
+.emailtext{
+text-align: center;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 350px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+  </style>
+  <body>
+
+<ul>
+  <div id="scroll">
+    <li><a href="Signup.html">Sign Up</a></li>
+    <li><a href="login.html">Log In</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+      <li class="house"><a href="donnaweb.html"><span class="fa fa-house" style="font-size:38px;cursor:pointer" onclick="openNav()"></a></span></li>
+  </div>
+  </ul>
+
+
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("scroll").style.top = "0";
+    } else {
+      document.getElementById("scroll").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+
+
+<section class="box">
+    <h2>Sign Up</h2>
+
+    <form action="/action_page.php" method="post">
+      <div class="container">
+
+       <button class="googlebutton" onclick="document.location='default.asp'"><p class="googletext"> Google  <img src="https://cdn.dribbble.com/users/904380/screenshots/2233565/attachments/415915/revised-google-logo.png" alt="gmail icon" width="90%" height="100%"style="vertical-align:middle"></button>
+         <button class="facebookbutton" onclick="document.location='default.asp'"><p class="facebooktext"> Facebook
+            <img  src="https://th.bing.com/th/id/OIP.8ium7zqni13KTG2HpMQKKgAAAA?rs=1&pid=ImgDetMain" alt="facebook icon" width="90%" height="100%"style="vertical-align:middle"></button>
+          <button class="emailbutton" onclick="document.location='default.asp'"><p class="emailtext"> Email  <img src="https://i.pinimg.com/originals/72/19/a7/7219a79e4a0cee483da39f871ca61a32.png" alt="email icon" width="50%" height="100%"style="vertical-align:middle"></button>
+        <p class="ortext"> ---OR--- </p>
+        <p> Already have an account?<a href="login.html">Log in<a></p>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <button type="submit">Sign Up</button>
+        <label>
+             <input type="checkbox" checked="checked" name="email me with updates">email me with updates
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <p>By signing up you agree to our<a href="Terms of Services/Privacy Policy.html">Terms of Services/Privacy Policy
+
+        </a></p>
+      </div>
+
+      <div class="container" style="background-color:darkgray">
+      </div>
+    </form>
+  </section>
+  </body>
+</html>
